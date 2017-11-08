@@ -9,7 +9,7 @@ public class DescendingByCount implements Comparator<Map.Entry<String, Integer>>
 
     // done turn this into descending order using the getValue() method on l and r
       
-    return 1.getValue().compareTo(r.getValue());
+    return r.getValue().compareTo(l.getValue());
 
   }
 }
