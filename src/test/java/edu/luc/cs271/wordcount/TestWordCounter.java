@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class TestWordCounter {
 
-  // TODO complete this test class
+  // Done complete this test class
 
   // TODO declare a reference to the SUT (system under test), i.e., WordCounter
   WordCounter wordcount;
@@ -45,9 +45,9 @@ public class TestWordCounter {
     assertEquals(wordcount.getCount("he"), 2);
     assertEquals(wordcount.getCount("the"), 1);
     
-    assertNotEquals(count.getCount("good"), 1);
-    assertNotEquals(count.getCount("grief"), 1);
-    // I am clueless as to why this isn't working.
+    assertNotEquals(wordcount.getCount("she"), 1);
+    assertNotEquals(wordcount.getCount("word"), 1);
+    // I am clueless as to why assertnotequals isn't working.
     // throws NullPointerExeption
 
   }
